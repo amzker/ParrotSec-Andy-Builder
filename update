@@ -1,0 +1,22 @@
+#!/bin/bash
+user=$("whoami")
+if [ $user != "root" ] ; then
+echo "RUN AS SUDO"
+fi
+if [ $user = "root" ] ; then
+echo "This Script Downloads ;Latest version of common packages & scripts"
+echo "NOTE: This Part is Not important due to after install "
+echo " it will auto update to latest"
+sleep 4
+clear
+echo  "Download Latest common Packages??[Y/N]"
+Y="Y"
+read dp
+   if [ $dp = $Y ]; then
+      wget http://amzux.site11.com/parrot/common.Amzx
+      Apkg common.Amzx
+   else
+      echo "OK!! Ba Bye"
+   fi
+
+fi

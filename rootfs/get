@@ -1,4 +1,0 @@
-#!/bin/bash
-echo "IN THIS VERSION ; I NOT SUPPORT CLI DOWNLOAD" & sleep 1 
-echo "Download file from below link and paste here" & sleep 2
-echo "link will update soon" & sleep 3

@@ -1,0 +1,10 @@
+#!/bin/bash
+#START=patch1.Amzhook
+echo "Patching For Perfect Use at Android"
+chmod 000 /root/*
+chmod 775 /home/parrot/Desktop/*
+apt install firejail
+apt install fakeroot
+rm -r /etc/X11
+echo "Security PATCH WILL ADD SOON"
+#END=patch1.Amzhook

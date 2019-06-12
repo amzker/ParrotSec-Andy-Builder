@@ -21,14 +21,14 @@ DOWNLOAD MY IMAGE & PASTE INTO `rootfs` FOLDER
 6. now simply run ./build
 
 # next
- Detail Doc jj will add soon 
+ Detail Doc i will add soon 
  
  
 #Q/A
 Here is answer of Your few Questions
 
 **1.why i removed parrotsec-Android**
->> I Removed Itt from nest , there are few reason
+>> I Removed It from nest , there are few reason
 silent reason is , Now not need to build new neWW rootfs anymore
 also 500, So basically ii moved at Github 
 

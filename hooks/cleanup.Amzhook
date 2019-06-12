@@ -1,0 +1,20 @@
+#!/bin/bash
+#START=cleanup.Amzhook
+echo "CleanUp started"
+rm -r /boot
+rm -r /etc/skel/.mo*
+rm -r /etc/skel/.kde
+rm -r /etc/skel/.local
+rm -r /etc/skel/Temp*
+rm -r /etc/skel/Desktop/Re*
+rm -r /etc/skel/.gtk* 
+rm -r /etc/skel/.ema*
+rm -r /etc/skel/.config
+apt remove --purge burpsuit* -y
+apt remove --purge airgeddon*
+apt remove --purge virtualbox*
+apt remove --purge wireshark
+apt remove --purge liboffice*
+apt remove --purge geany*
+apt remove --purge firefox*
+#END=cleanup.Amzhook

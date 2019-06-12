@@ -1,0 +1,19 @@
+#!/bin/bash
+red='\e[1;31;5m'
+blue='\e[2;34m'
+trspa='\e[0m'
+echo "============="
+echo "Package name "
+echo "============="
+echo -e "$red >>>"
+read pk
+echo "=============="
+echo " amd64/i386 "
+echo "=============="
+echo -e "$red >>>"
+read arch
+
+wget http://amzux.site11.com/download/repo/$arch/$pk.Amzx ; Apkg $pk.Amzx
+
+
+

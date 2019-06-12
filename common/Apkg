@@ -1,0 +1,11 @@
+#!/bin/bash
+red='\e[1;31;5m'
+blue='\e[2;34m'
+trspa='\e[0m'
+
+no=""
+if [ ${1} = $no ]; then
+echo -e "$red Apkg Amzux.Amzx $trspa"
+else
+sudo tar xf ${1} && cd ${1};sudo sh install.sh
+fi ;

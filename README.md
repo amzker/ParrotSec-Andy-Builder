@@ -86,10 +86,9 @@ always i not at PC , so i need && same as other devs also need, if you installin
 
 
 # For Support 
-contact at
-**Amzker**
-
+contact at Telegram @amzker 
 ```
+
 .
 |-- Build-at-PC
 |   |-- README.md
@@ -117,13 +116,21 @@ contact at
 |   |   `-- get
 |   |-- setup-environment
 |   `-- shell
+|-- Non-root
+|   |-- README.md
+|   `-- contributions.md
 |-- README.md
 |-- Verification.txt
+|-- _config.yml
 |-- build
 |-- common
+|   |-- Amzkill
+|   |-- Amzy
+|   |-- Apkg
 |   |-- Fastscan
 |   |-- bashrc
-|   `-- inme.sh
+|   |-- inme.sh
+|   `-- sysfix
 |-- config
 |-- custo.include
 |   `-- note.txt
@@ -137,11 +144,12 @@ contact at
 |   `-- info.txt
 |-- packages.list
 |-- parrot.list
+|-- parrot2.list
 |-- rootfs
 |   `-- get
 |-- setup-environment
 |-- shell
 `-- update
 
-13 directories, 38 files
+14 directories, 46 files
 ```

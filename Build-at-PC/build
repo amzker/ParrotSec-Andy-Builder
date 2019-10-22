@@ -1,0 +1,13 @@
+#!/bin/bash
+#Support & Maintainer : 12-6-2019 Amzker ; http://t.me/@amzker
+#Edit: 10-8-2019
+echo "Build Process May take 10 min"
+user=$("whoami")
+if [ $user != "root" ] ; then
+echo "RUN AS SUDO"
+fi ;
+if [ $user = "root" ] ; then
+tar czf out/Parrot-Andy-build.xz image/binary
+echo "File Created at out "
+echo "NOTE:YOU ALSO ABLE TO EDIT THIS FILE by CHANGE NAME to parrot-rootfs.xz & paste into rootfs"
+fi ;

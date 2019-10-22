@@ -11,10 +11,10 @@ rm -r /etc/skel/.gtk*
 rm -r /etc/skel/.ema*
 rm -r /etc/skel/.config
 apt remove --purge burpsuit* -y
-apt remove --purge airgeddon*
-apt remove --purge virtualbox*
-apt remove --purge wireshark
-apt remove --purge liboffice*
-apt remove --purge geany*
-apt remove --purge firefox*
+apt remove --purge airgeddon* -y
+apt remove --purge virtualbox* -y
+apt remove --purge wireshark -y
+apt remove --purge liboffice* -y
+apt remove --purge geany* -y
+apt remove --purge firefox* -y
 #END=cleanup.Amzhook

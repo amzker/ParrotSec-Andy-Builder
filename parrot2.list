@@ -1,0 +1,5 @@
+deb [trusted=yes]  https://deb.parrot.sh/parrot/ rolling main contrib non-free
+#deb-src https://deb.parrot.sh/parrot/ rolling main contrib non-free
+deb [trusted=yes] https://deb.parrot.sh/parrot/ rolling-security main contrib non-free
+#deb-src https://deb.parrot.sh/parrot/ rolling-security main contrib non-free
+deb [trusted=yes arch=amd64] https://raw.githubusercontent.com/amzux/Amzux-repo/master Zubbu main

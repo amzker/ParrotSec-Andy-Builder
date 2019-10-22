@@ -1,0 +1,33 @@
+#!/bin/bash
+#Maintain by : Amzker ; http://t.me/@amzker
+pfol="parrot-fs"
+rootfs=rootfs/parrot-rootfs.xz
+user=$("whoami")
+if [ $user != "root" ] ; then
+echo "RUN AS SUDO"
+fi
+if [ $user = "root" ] ; then
+echo "THIS MAY TAKE {TIME:~20min}"
+      if [ -f "$rootfs" ] ; then
+         tar xvf $rootfs -C image/
+         cp -r common/bashrc image/$pfol/etc/skel/.bashrc
+         cp -r common/inme.sh image/$pfol/usr/local/bin
+         cp -r Amzy Apkg Amzkill sysfix image/$pfol/usr/local/bin/
+         cp -r custo.includ/* image/$pfol/usr/local/bin/
+         chmod 775 image/$pfol/usr/local/bin/*
+         rm -r image/$pfol/etc/skel/.mozi*
+         mkdir -p image/$pfol/etc/skel/Desktop/exec
+         cp hooks/* image/$pfol/etc/skel/Desktop/exec/
+         cp hooks/* image/$pfol/home/parrot/Desktop/exec/
+         cp -r packages.list image/$pfol/home/parrot/pack.list
+         cp parrot.list image/$pfol/etc/apt/sources.list.d/parrot.list
+         clear
+         chmod 775 image/$pfol/home/parrot/Desktop/exec/*
+         echo "Everything is setup well" & sleep 1
+         echo "execute ./shell" & sleep 2
+         echo "then type inme.sh & wait a while"
+      else
+         echo $rootfs "does not exist"
+     fi
+
+fi

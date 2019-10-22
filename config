@@ -18,6 +18,7 @@ echo "THIS MAY TAKE {TIME:~20min}"
          rm -r image/$pfol/etc/skel/.mozi*
          mkdir -p image/$pfol/etc/skel/Desktop/exec
          cp hooks/* image/$pfol/etc/skel/Desktop/exec/
+         cp hooks/* image/$pfol/home/parrot/Desktop/exec/
          cp -r packages.list image/$pfol/home/parrot/pack.list
          cp parrot.list image/$pfol/etc/apt/sources.list.d/parrot.list
          clear

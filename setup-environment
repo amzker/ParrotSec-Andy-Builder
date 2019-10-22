@@ -9,12 +9,7 @@ if [ $user = "root" ] ; then
     apt install tar zip unzip wget live-build  debootstrap make binutils
     apt install tar zip unzip wget live-build  debootstrap make binutils
     apt install tar zip unzip wget live-build  debootstrap make binutils
-    wget http://amzux.site11.com/download/repo/amd64/Amzy.Amzx
-    mkdir temp
-    tar xf Amzy.Amzx -C temp/
-    sh temp/Amzy.Amzx/install.sh
-    rm -r temp
-    rm -r Amzy.Amzx
+    dpkg -i common/Amzy.deb
     echo "Environment is set fully !!; make sure you check by typing Apkg or Amzy"
     sleep 2
     clear

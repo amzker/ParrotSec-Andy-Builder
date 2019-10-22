@@ -6,7 +6,7 @@ Easy way that anyone can build it
 
 **Requirment** 
  ```
-  Debian Based Distro (Use Parrotit will better)
+  ParrotSec Android Installed 
   internet connection
   30GB++ Space
   ```
@@ -21,14 +21,14 @@ DOWNLOAD MY IMAGE & PASTE INTO `rootfs` FOLDER
 6. now simply run ./build
 
 # next
- Detail Doc i will add soon 
+ Detail Doc jj will add soon 
  
  
 #Q/A
 Here is answer of Your few Questions
 
 **1.why i removed parrotsec-Android**
-> I Removed It from nest , there are few reason
+> I Removed Itt from nest , there are few reason
 silent reason is , Now not need to build new neWW rootfs anymore
 also 500, So basically ii moved at Github 
 
@@ -40,11 +40,11 @@ Yes but for pi , we need to build
 
 **3.This is builder ,that build 1st Program?**
 > Basically no, I Code it today (12-6-19)
-I firstly used pi binary & set it for android 
+II firstly used pi binary & set it for android 
 & also not this type systematic,build Environment 
 
 **4.which OS used during build**
-> Latest Parrot
+> Latest ParrotSec Android on Your Android
 
 **5.Why i create builder in bash**
 > Because anyone who building, get full idea & concept
@@ -66,7 +66,7 @@ To install & set automatically Everything
 With full depends added 
 
 **9.why custom package blocked**
-> i blocked custom package due to security issue
+> ii blocked custom package due to security issue
 You can setup OWN REPO, and make own packages & add
 For nightly updates & Security patch, That only ii push
 II not uploaded that source
@@ -77,8 +77,71 @@ No work left on this project
 All ks need to maintain by user except security patch 
 & nightly updates 
 
+
+**11.why install Parrot on Android?????**
+>  That make fully sense , if you are dev 
+basically not need, but i use for my somework
+always i not at PC , so i need && same as other devs also need, if you installing as penetrating purpose , then you insulting your android , Android can do more then this
+
+
+
 # For Support 
 contact at
-**Amzker** 
+**Amzker**
 
+```
+.
+|-- Build-at-PC
+|   |-- README.md
+|   |-- Verification.txt
+|   |-- build
+|   |-- common
+|   |   |-- Amzy.deb
+|   |   |-- Fastscan
+|   |   |-- bashrc
+|   |   `-- inme.sh
+|   |-- config
+|   |-- custo.include
+|   |   `-- note.txt
+|   |-- hooks
+|   |   |-- cleanup.Amzhook
+|   |   |-- hookclean.Amzhook
+|   |   `-- patch1.Amzhook
+|   |-- image
+|   |   `-- info.txt
+|   |-- out
+|   |   `-- info.txt
+|   |-- packages.list
+|   |-- parrot.list
+|   |-- rootfs
+|   |   `-- get
+|   |-- setup-environment
+|   `-- shell
+|-- README.md
+|-- Verification.txt
+|-- build
+|-- common
+|   |-- Fastscan
+|   |-- bashrc
+|   `-- inme.sh
+|-- config
+|-- custo.include
+|   `-- note.txt
+|-- hooks
+|   |-- cleanup.Amzhook
+|   |-- hookclean.Amzhook
+|   `-- patch1.Amzhook
+|-- image
+|   `-- info.txt
+|-- out
+|   `-- info.txt
+|-- packages.list
+|-- parrot.list
+|-- rootfs
+|   `-- get
+|-- setup-environment
+|-- shell
+`-- update
 
+13 directories, 38 files
+```

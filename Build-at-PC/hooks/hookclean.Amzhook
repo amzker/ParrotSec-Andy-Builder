@@ -1,0 +1,3 @@
+#!/bin/bash
+echo "cleanup hook"
+rm -r /home/parrot/Desktop/exec

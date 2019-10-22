@@ -1,0 +1,14 @@
+#!/bin/bash
+fppoll=image/parrot-fs
+user=$("whoami")
+if [ $user != "root" ] ; then
+echo "RUN AS SUDO"
+fi
+if [ $user = "root" ] ; then
+
+     if [ -f $fppoll ] ; then
+    lbchroot image/parrot-fs
+     else
+     echo $fppoll "Not FOund ; run config first"
+     fi
+fi

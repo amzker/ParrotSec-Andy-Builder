@@ -1,6 +1,5 @@
 **Testers**
-@bad1ink
-
+@bad1ink : Used/tried  Parrot-Android non root gamma build.
 
 
 

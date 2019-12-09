@@ -1,29 +1,36 @@
 # ParrotSec-Andy-Builder
 
-Support Group http://t.me/ @ParrotAndy
-
 ```Official Builder of Unofficial ParrotSec Android```
+# Support Group
+
+http://t.me/@ParrotAndy
+
 # How To Use
 Easy way that anyone can build it
 
 **Requirment** 
  ```
   ParrotSec Android Installed 
-  internet connection
-  30GB++ Space
+  iunternet connection
+  30GB++ Space (for fully new build)
+  5GB    Space (for This ./build)
+  3GB    Space (for use)
   ```
 # Build Process
 
+0. Go to rootfs folder and put rootfs(from get file)
 1. Run ./Setup.Environment >>it will set up all tools and all
 DOWNLOAD MY IMAGE & PASTE INTO `rootfs` FOLDER
 2. Run ./config >>This step may take time
-3. Run ./shell >>and you get shell of our build
-4. Now type inme.sh into that shell
-5. After inme.sh complete it work ; do your modification & exit
-6. now simply run ./build
+3. Run ./shell >>and you get shell of our build (only if you in same arch)
+   3.a Now type inme.sh into that shell
+   3.b After inme.sh complete it work ; do your modification & exit
+4. now simply run ./build
+
+[IF YOU NOT IN SAME ARCH , YOU NEED TO EDIT CHROOT MANUALLY , FOR THAT I CREATED NEW SCRIPT , PUSH SOON]
 
 # next
- Detail Doc jj will add soon 
+ Detail Doc  will add soon 
  
  
 #Q/A
@@ -48,12 +55,10 @@ II firstly used pi binary & set it for android
 **4.which OS used during build**
 > Latest ParrotSec Android on Your Android
 
-**5.Why i create builder in bash**
-> Because anyone who building, get full idea & concept
-That how this is work# ,so able to set own customization
-As per he/she like
+**5.Why i created this project**
+> for personal use
 
-**6.This is Official?**
+**6.This is Official builder?**
 > Official builder oF unofficial ParrotSec-Android 
 
 **7.why i used Drive?**
@@ -74,11 +79,7 @@ For nightly updates & Security patch, That only ii push
 II not uploaded that source
 
 **10.Now what Amzker going to do?**
-> sitting on chair & drinking Masala Tea 
-No work left on this project
-All ks need to maintain by user except security patch 
-& nightly updates 
-
+> GUI work
 
 **11.why install Parrot on Android?????**
 >  That make fully sense , if you are dev 
@@ -90,6 +91,7 @@ always i not at PC , so i need && same as other devs also need, if you installin
 # For Support 
 contact at Telegram @amzker 
 ```
+
 
 .
 |-- Build-at-PC
@@ -120,23 +122,23 @@ contact at Telegram @amzker
 |   `-- shell
 |-- Non-root
 |   |-- README.md
+|   |-- Verification.txt
 |   `-- contributions.md
 |-- README.md
 |-- Verification.txt
-|-- _config.yml
 |-- build
 |-- common
-|   |-- Amzkill
-|   |-- Amzy
-|   |-- Apkg
+|   |-- Amzy.deb
 |   |-- Fastscan
+|   |-- Verification.txt
 |   |-- bashrc
-|   |-- inme.sh
-|   `-- sysfix
+|   `-- inme.sh
 |-- config
 |-- custo.include
+|   |-- Verification.txt
 |   `-- note.txt
 |-- hooks
+|   |-- Verification.txt
 |   |-- cleanup.Amzhook
 |   |-- hookclean.Amzhook
 |   `-- patch1.Amzhook
@@ -150,8 +152,7 @@ contact at Telegram @amzker
 |-- rootfs
 |   `-- get
 |-- setup-environment
-|-- shell
-`-- update
+`-- shell
 
-14 directories, 46 files
+14 directories, 45 files
 ```

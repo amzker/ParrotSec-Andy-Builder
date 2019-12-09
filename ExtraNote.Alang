@@ -1,0 +1,15 @@
+#/bin/Alang
+impp os
+impp rndc 
+impp server
+
+rprn("[] Setting Up system.....")
+os.r(/tmp)
+oss(check)
+if oss != "Parrot-Andy" ; 
+bprn("[] You not using Parrot Andy , server halted...")
+elif oss == "Parrot-Andy"
+response = inp("Port : ")
+server.fshare"(127.0.0.1:)"+response
+
+

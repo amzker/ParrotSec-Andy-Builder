@@ -7,6 +7,9 @@ echo "RUN AS SUDO"
 fi ;
 if [ $user = "root" ] ; then
 tar czf out/Parrot-Andy-build.xz image/parrot-fs
+mv out/Parrot-Andy-build.xz Flashable/data/local/ParrotSec/parrotfs.xz
+zip -r out/Parrot-Andy-Flashable.zip Flashable/data Flashable/system Flashable/META-INF
+
 echo "File Created at out "
 echo "NOTE:YOU ALSO ABLE TO EDIT THIS FILE by CHANGE NAME to parrot-rootfs.xz & paste into rootfs"
 fi ;

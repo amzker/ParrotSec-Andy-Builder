@@ -1,0 +1,38 @@
+ui_print("=============================");
+ui_print("  Parrot Andy , @amzker.     ");
+ui_print("=============================");
+ui_print("");
+ui_print("");
+
+show_progress(1.000000, 0);
+ui_print("Mounting filesystems...");
+run_program("/sbin/busybox", "mount", "/data");
+run_program("/sbin/busybox", "mount", "/system");
+set_progress(0.100000);
+
+ui_print("Extracting files...");
+package_extract_dir("data", "/data");
+package_extract_dir("system", "/system");
+set_progress(0.300000);
+
+ui_print("Setting permissions...");
+set_perm(0, 0, 0755, "/data/local/ParrotSec/parrotfs.xz");
+set_perm(0, 0, 0775, "/system/bin/install-parrot");
+set_perm(0, 0, 0775, "/system/bin/bootup");
+set_progress(0.400000);
+set_progress(0.500000);
+
+ui_print("Symlinking busybox...");
+symlink("busybox", "null/sh: <stdin>[2]: busybox: not found");
+set_progress(0.700000);
+
+# Unmounting filesystems...
+run_program("/sbin/busybox", "umount", "/data");
+run_program("/sbin/busybox", "umount", "/system");
+set_progress(0.900000);
+
+
+set_progress(1.000000);
+ui_print("****************************************");
+ui_print("*          Install Complete!           *");
+ui_print("****************************************");

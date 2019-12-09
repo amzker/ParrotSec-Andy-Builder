@@ -1,0 +1,3 @@
+a719d41cc84ee0fd958ce60ce57c1c2c  Fastscan
+242a1884ab61704faeb75205b44d5fa0  bashrc
+f83df741b8605d6503d45d284a2b8784  inme.sh

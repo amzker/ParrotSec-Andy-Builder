@@ -1,0 +1,4 @@
+#/bin/sh
+echo "Going to install"
+tar xvf /data/local/ParrotSec/parrotfs.xz || echo "install fail"
+echo "done"

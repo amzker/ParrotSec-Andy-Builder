@@ -7,7 +7,7 @@ fi
 if [ $user = "root" ] ; then
 
      if [ -f $fppoll ] ; then
-     chroot image/parrot-fs
+     chroot image/parrot-fs/
      else
      echo $fppoll "Not FOund ; run config first"
      fi

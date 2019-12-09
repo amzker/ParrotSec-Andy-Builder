@@ -1,0 +1,4 @@
+cbb3b1fb98ac8b1034a7a135ce88a633  Verificatiom
+42a532107521238df3fb9101f522a8c2  cleanup.Amzhook
+3cc2ff3259b574263b572dafa8a9e807  hookclean.Amzhook
+1b4aff4e2f970aaf7ae2ec335a7871b0  patch1.Amzhook
